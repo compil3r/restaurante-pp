@@ -1,0 +1,146 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container, .detalhes-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurantes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para os cards de restaurante */
+.restaurante-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.restaurante-card:hover {
+    transform: scale(1.05);
+}
+
+.restaurante-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurante-card .info {
+    padding: 15px;
+    text-align: center;
+}
+
+.restaurante-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.restaurante-card h2:hover {
+    color: #007bff;
+}
+
+.restaurante-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Estilo para a página de detalhes */
+.detalhes-container {
+    max-width: 800px;
+    padding: 30px;
+}
+
+.detalhes-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalhes-container h2 {
+    font-size: 32px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.detalhes-container p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input[type="text"]:focus, form input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
